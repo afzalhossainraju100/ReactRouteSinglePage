@@ -11,23 +11,24 @@ const Header = () => {
           gap: "20px",
           padding: "10px",
           backgroundColor: "#f0f0f0",
+          active: { color: "red" },
         }}
       >
-        <Link to="/" style={{ color: "blue", textDecoration: "underline" }}>
+        <navLink to="/" style={{ color: "blue", textDecoration: "underline" }}>
           Home
-        </Link>
-        <Link
+        </navLink>
+        <navLink
           to="/Mobiles"
           style={{ color: "blue", textDecoration: "underline" }}
         >
           Mobiles
-        </Link>
-        <Link
+        </navLink>
+        <navLink
           to="/Laptops"
           style={{ color: "blue", textDecoration: "underline" }}
         >
           Laptops
-        </Link>
+        </navLink>
       </nav>
     </div>
   );
