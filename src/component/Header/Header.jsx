@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -11,24 +11,62 @@ const Header = () => {
           gap: "20px",
           padding: "10px",
           backgroundColor: "#f0f0f0",
-          active: { color: "red" },
         }}
       >
-        <navLink to="/" style={{ color: "blue", textDecoration: "underline" }}>
+        <NavLink
+          to="/"
+          style={({ isActive }) => ({
+            color: isActive ? "red" : "blue",
+            textDecoration: "underline",
+          })}
+        >
           Home
-        </navLink>
-        <navLink
+        </NavLink>
+        <NavLink
           to="/Mobiles"
-          style={{ color: "blue", textDecoration: "underline" }}
+          style={({ isActive }) => ({
+            color: isActive ? "red" : "blue",
+            textDecoration: "underline",
+          })}
         >
           Mobiles
-        </navLink>
-        <navLink
+        </NavLink>
+        <NavLink
           to="/Laptops"
-          style={{ color: "blue", textDecoration: "underline" }}
+          style={({ isActive }) => ({
+            color: isActive ? "red" : "blue",
+            textDecoration: "underline",
+          })}
         >
           Laptops
-        </navLink>
+        </NavLink>
+        <NavLink
+          to="/Users"
+          style={({ isActive }) => ({
+            color: isActive ? "red" : "blue",
+            textDecoration: "underline",
+          })}
+        >
+          Users
+        </NavLink>
+        <NavLink
+          to="/Users"
+          style={({ isActive }) => ({
+            color: isActive ? "red" : "blue",
+            textDecoration: "underline",
+          })}
+        >
+          Users
+        </NavLink>
+        <NavLink
+          to="/Users2"
+          style={({ isActive }) => ({
+            color: isActive ? "red" : "blue",
+            textDecoration: "underline",
+          })}
+        >
+          Users2
+        </NavLink>
       </nav>
     </div>
   );
